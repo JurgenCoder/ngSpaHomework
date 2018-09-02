@@ -27,20 +27,8 @@ export class MainContentComponent implements OnInit {
     });
   }
 
-  onHotelClick(): void {
-    this._searchCriteria = 'weather';
-  }
-
-  onFishingCkick(): void {
-    this._searchCriteria = 'fishing';
-  }
-
-  onToursClick(): void {
-    this._searchCriteria = 'tours';
-  }
-
-  onWeatherClick(): void {
-    this._searchCriteria = 'weather';
+  onFilterClick(filter: string): void {
+    this._searchCriteria = filter;
   }
 
   onRowClick(hotel: IHotel): void {

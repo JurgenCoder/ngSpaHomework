@@ -6,6 +6,7 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { WeatherComponent } from './weather/weather.component';
 import { StatisticComponent } from './statistic/statistic.component';
 import { TourFilterPipe } from './pipes/tour-filter.pipe';
+import { PhoneNumberPipe } from './pipes/phone-number.pipe';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { TourFilterPipe } from './pipes/tour-filter.pipe';
     MainContentComponent,
     WeatherComponent,
     StatisticComponent,
-    TourFilterPipe
+    TourFilterPipe,
+    PhoneNumberPipe
   ],
   imports: [
     BrowserModule

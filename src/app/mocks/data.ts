@@ -100,7 +100,7 @@ const hotels: IHotel[] = [
       followers: 5850,
       following: 1675,
     },
-    type: 'fishing'
+    type: 'hotel'
   },
   {
     imgHead: 'assets/images/river.jpeg',

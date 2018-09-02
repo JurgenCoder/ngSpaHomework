@@ -3,10 +3,11 @@
     <div class="element-left-bottom">
       <div class="ele-strip">
         <ul>
-          <li><a href="#" (click)="onHotelClick()">Hotel</a></li>
-          <li><a href="#" (click)="onFishingCkick()">Fishing</a></li>
-          <li><a href="#" (click)="onToursClick()">Tours</a></li>
-          <li class="anc-bor"><a href="#" (click)="onWeatherClick()">Weather</a></li>
+          <li><a href="#" (click)="onFilterClick('hotel')">Hotel</a></li>
+          <li><a href="#" (click)="onFilterClick('fishing')">Fishing</a></li>
+          <li><a href="#" (click)="onFilterClick('tours')">Tours</a></li>
+          <li><a href="#" (click)="onFilterClick('weather')">Weather</a></li>
+          <li class="anc-bor"><a href="#" (click)="onFilterClick(null)">All</a></li>
         </ul>
       </div>
       <div class="village">
@@ -19,7 +20,7 @@
                 <h5>{{hotel.address}}</h5>
                 <p>Sed perspiciatis</p>
                 <p>Et harum quidem</p>
-                <h6>Tel:+{{hotel.phone}}</h6>
+                <h6>{{hotel.phone | phoneNumber}}</h6>
               </div>
               <div class="activity-img">
                 <ul>
