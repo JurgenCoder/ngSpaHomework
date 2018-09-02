@@ -3,7 +3,8 @@ import {delay, map} from 'rxjs/operators';
 
 const hotels: IHotel[] = [
   {
-    img1: 'assets/images/land.jpg',
+    imgHead: 'assets/images/1.jpg',
+    img1: 'assets/images/res.jpg',
     img2: 'assets/images/r1.jpg',
     address: 'Resort Address',
     phone: 1285968685,
@@ -13,15 +14,16 @@ const hotels: IHotel[] = [
       water: 23,
       temperature: 15
     },
-    social_info: {
+    socialInfo: {
       title: 'Nam libero voluptatem',
       img: 'assets/images/b1.jpg',
       followers: 2850,
       following: 675,
     },
-    type: 'hotel'
+    type: 'weather'
   },
   {
+    imgHead: 'assets/images/land.jpeg',
     img1: 'assets/images/res.jpg',
     img2: 'assets/images/r1.jpg',
     address: 'Resort Address',
@@ -32,15 +34,16 @@ const hotels: IHotel[] = [
       water: 24,
       temperature: 18
     },
-    social_info: {
+    socialInfo: {
       title: 'Nam libero voluptatem',
-      img: 'assets/images/b1.jpg',
+      img: 'assets/images/r1.jpg',
       followers: 1770,
       following: 523,
     },
     type: 'tours'
   },
   {
+    imgHead: 'assets/images/1.jpg',
     img1: 'assets/images/res.jpg',
     img2: 'assets/images/r1.jpg',
     address: 'Resort Address',
@@ -51,7 +54,7 @@ const hotels: IHotel[] = [
       water: 26,
       temperature: 20
     },
-    social_info: {
+    socialInfo: {
       title: 'Nam libero voluptatem',
       img: 'assets/images/b1.jpg',
       followers: 456,
@@ -60,6 +63,7 @@ const hotels: IHotel[] = [
     type: 'fishing'
   },
   {
+    imgHead: 'assets/images/land.jpeg',
     img1: 'assets/images/res.jpg',
     img2: 'assets/images/r1.jpg',
     address: 'Resort Address',
@@ -70,7 +74,7 @@ const hotels: IHotel[] = [
       water: 21,
       temperature: 12
     },
-    social_info: {
+    socialInfo: {
       title: 'Nam libero voluptatem',
       img: 'assets/images/b1.jpg',
       followers: 1234,
@@ -79,6 +83,7 @@ const hotels: IHotel[] = [
     type: 'fishing'
   },
   {
+    imgHead: 'assets/images/1.jpg',
     img1: 'assets/images/res.jpg',
     img2: 'assets/images/r1.jpg',
     address: 'Resort Address',
@@ -89,15 +94,16 @@ const hotels: IHotel[] = [
       water: 20,
       temperature: 14
     },
-    social_info: {
+    socialInfo: {
       title: 'Nam libero voluptatem',
-      img: 'assets/images/b1.jpg',
+      img: 'assets/images/r1.jpg',
       followers: 5850,
       following: 1675,
     },
     type: 'fishing'
   },
   {
+    imgHead: 'assets/images/river.jpeg',
     img1: 'assets/images/res.jpg',
     img2: 'assets/images/r1.jpg',
     address: 'Resort Address',
@@ -108,7 +114,7 @@ const hotels: IHotel[] = [
       water: 23,
       temperature: 19
     },
-    social_info: {
+    socialInfo: {
       title: 'Nam libero voluptatem',
       img: 'assets/images/b1.jpg',
       followers: 850,
@@ -117,6 +123,7 @@ const hotels: IHotel[] = [
     type: 'weather'
   },
   {
+    imgHead: 'assets/images/1.jpg',
     img1: 'assets/images/res.jpg',
     img2: 'assets/images/r1.jpg',
     address: 'Resort Address',
@@ -127,7 +134,7 @@ const hotels: IHotel[] = [
       water: 25,
       temperature: 16
     },
-    social_info: {
+    socialInfo: {
       title: 'Nam libero voluptatem',
       img: 'assets/images/b1.jpg',
       followers: 7850,
@@ -140,7 +147,7 @@ const hotels: IHotel[] = [
 export const hotels$: Observable<IHotel[]> = of(hotels)
   .pipe(
     map((hotelsArr: IHotel[]) =>
-      hotelsArr.filter((product: IHotel) => product.type)),
+      hotelsArr.filter((hotel: IHotel) => hotel.type)),
     delay(3000)
   );
 

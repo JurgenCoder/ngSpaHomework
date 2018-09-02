@@ -8,7 +8,7 @@ import {hotels$} from '../mocks/data';
 })
 export class StatisticComponent implements OnInit {
   @Input()
-  public hotel;
+  public socialInfo: ISocialInfo;
 
   constructor() { }
 

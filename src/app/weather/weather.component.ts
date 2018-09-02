@@ -7,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class WeatherComponent implements OnInit {
   @Input()
-  public hotel: IHotel;
+  public weather: IWeather;
 
   constructor() { }
 
