@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {hotels$} from '../mocks/data';
 
 @Component({
   selector: 'app-statistic',
@@ -6,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./statistic.component.css']
 })
 export class StatisticComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {

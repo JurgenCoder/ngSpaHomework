@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { WeatherComponent } from './weather/weather.component';
 import { StatisticComponent } from './statistic/statistic.component';
+import { TourFilterPipe } from './pipes/tour-filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainContentComponent,
     WeatherComponent,
-    StatisticComponent
+    StatisticComponent,
+    TourFilterPipe
   ],
   imports: [
     BrowserModule
