@@ -3,15 +3,15 @@ import {delay, map} from 'rxjs/operators';
 
 const hotels: IHotel[] = [
   {
-    img1: 'assets/images/res.jpg',
+    img1: 'assets/images/land.jpg',
     img2: 'assets/images/r1.jpg',
     address: 'Resort Address',
     phone: 1285968685,
     weather: {
       title: 'Et harum quidem',
       icon: '../../assets/image/cloudy.png',
-      water: 20,
-      temperature: 14
+      water: 23,
+      temperature: 15
     },
     social_info: {
       title: 'Nam libero voluptatem',
@@ -29,14 +29,14 @@ const hotels: IHotel[] = [
     weather: {
       title: 'Et harum quidem',
       icon: '../../assets/image/cloudy.png',
-      water: 20,
-      temperature: 14
+      water: 24,
+      temperature: 18
     },
     social_info: {
       title: 'Nam libero voluptatem',
       img: 'assets/images/b1.jpg',
-      followers: 2850,
-      following: 675,
+      followers: 1770,
+      following: 523,
     },
     type: 'tours'
   },
@@ -48,14 +48,33 @@ const hotels: IHotel[] = [
     weather: {
       title: 'Et harum quidem',
       icon: '../../assets/image/cloudy.png',
-      water: 20,
-      temperature: 14
+      water: 26,
+      temperature: 20
     },
     social_info: {
       title: 'Nam libero voluptatem',
       img: 'assets/images/b1.jpg',
-      followers: 2850,
-      following: 675,
+      followers: 456,
+      following: 112,
+    },
+    type: 'fishing'
+  },
+  {
+    img1: 'assets/images/res.jpg',
+    img2: 'assets/images/r1.jpg',
+    address: 'Resort Address',
+    phone: 1285968685,
+    weather: {
+      title: 'Et harum quidem',
+      icon: '../../assets/image/cloudy.png',
+      water: 21,
+      temperature: 12
+    },
+    social_info: {
+      title: 'Nam libero voluptatem',
+      img: 'assets/images/b1.jpg',
+      followers: 1234,
+      following: 97,
     },
     type: 'fishing'
   },
@@ -73,8 +92,8 @@ const hotels: IHotel[] = [
     social_info: {
       title: 'Nam libero voluptatem',
       img: 'assets/images/b1.jpg',
-      followers: 2850,
-      following: 675,
+      followers: 5850,
+      following: 1675,
     },
     type: 'fishing'
   },
@@ -86,33 +105,14 @@ const hotels: IHotel[] = [
     weather: {
       title: 'Et harum quidem',
       icon: '../../assets/image/cloudy.png',
-      water: 20,
-      temperature: 14
+      water: 23,
+      temperature: 19
     },
     social_info: {
       title: 'Nam libero voluptatem',
       img: 'assets/images/b1.jpg',
-      followers: 2850,
-      following: 675,
-    },
-    type: 'fishing'
-  },
-  {
-    img1: 'assets/images/res.jpg',
-    img2: 'assets/images/r1.jpg',
-    address: 'Resort Address',
-    phone: 1285968685,
-    weather: {
-      title: 'Et harum quidem',
-      icon: '../../assets/image/cloudy.png',
-      water: 20,
-      temperature: 14
-    },
-    social_info: {
-      title: 'Nam libero voluptatem',
-      img: 'assets/images/b1.jpg',
-      followers: 2850,
-      following: 675,
+      followers: 850,
+      following: 65,
     },
     type: 'weather'
   },
@@ -124,14 +124,14 @@ const hotels: IHotel[] = [
     weather: {
       title: 'Et harum quidem',
       icon: '../../assets/image/cloudy.png',
-      water: 20,
-      temperature: 14
+      water: 25,
+      temperature: 16
     },
     social_info: {
       title: 'Nam libero voluptatem',
       img: 'assets/images/b1.jpg',
-      followers: 2850,
-      following: 675,
+      followers: 7850,
+      following: 1675,
     },
     type: 'weather'
   },

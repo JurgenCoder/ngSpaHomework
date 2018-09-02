@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import {hotels$} from './mocks/data';
-import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +7,9 @@ import {Observable} from 'rxjs';
 })
 export class AppComponent {
   public title = 'ngSpaHomework';
+  public currentHotel;
+
+  onTourRowClick(hotel: IHotel): void {
+    this.currentHotel = hotel;
+  }
 }

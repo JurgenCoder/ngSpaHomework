@@ -1,8 +1,8 @@
 <h1>Hot Weather Widget</h1>
 <div class="element">
-  <app-main-content></app-main-content>
-  <app-weather></app-weather>
-  <app-statistic></app-statistic>
+  <app-main-content (rowClick)="onTourRowClick($event)"></app-main-content>
+  <app-weather [hotel] = "currentHotel"></app-weather>
+  <app-statistic [hotel] = "currentHotel"></app-statistic>
   <div class="clear"> </div>
 </div>
 <div class="copy-right">

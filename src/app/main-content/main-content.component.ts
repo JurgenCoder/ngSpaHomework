@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {Observable} from 'rxjs';
 import {hotels$} from '../mocks/data';
 
@@ -10,6 +10,9 @@ import {hotels$} from '../mocks/data';
 export class MainContentComponent implements OnInit {
   public hotels$: Observable<IHotel[]> = hotels$;
   private _searchCriteria;
+
+  @Output()
+  public rowClick: EventEmitter<IHotel> = new EventEmitter<IHotel>();
 
   constructor() { }
 
@@ -31,6 +34,10 @@ export class MainContentComponent implements OnInit {
 
   onWeatherClick(): void {
     this._searchCriteria = 'weather';
+  }
+
+  onRowClick(hotel: IHotel): void {
+    this.rowClick.emit(hotel);
   }
 
   get searchCriteria(): string {

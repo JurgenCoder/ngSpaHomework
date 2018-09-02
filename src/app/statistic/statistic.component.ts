@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {hotels$} from '../mocks/data';
 
 @Component({
@@ -7,6 +7,9 @@ import {hotels$} from '../mocks/data';
   styleUrls: ['./statistic.component.css']
 })
 export class StatisticComponent implements OnInit {
+  @Input()
+  public hotel;
+
   constructor() { }
 
   ngOnInit() {

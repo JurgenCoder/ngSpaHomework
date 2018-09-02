@@ -15,7 +15,7 @@
         <div class="activity_box">
           <div class="scrollbar" id="style-2" *ngIf="hotels$ | async as hotels; else loadRef">
             <div class="activity-row" *ngFor="let hotel of hotels | tourFilter: searchCriteria">
-              <div class="activity-desc">
+              <div class="activity-desc" (click)="onRowClick(hotel)">
                 <h5>{{hotel.address}}</h5>
                 <p>Sed perspiciatis</p>
                 <p>Et harum quidem</p>
